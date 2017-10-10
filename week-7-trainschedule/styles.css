@@ -1,0 +1,57 @@
+body{
+	background-image: url("https://images2.alphacoders.com/590/thumb-1920-590356.jpg");
+}
+
+p
+{
+	font-size: 20px;
+	color: white;
+	margin-left: 10px;
+}
+
+.jumbotron
+{
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+#tableHeader
+{
+	margin-top: 20px;
+	background-color: red;
+	color: white;
+}
+
+.table{
+	color: black;
+	background-color: gray;
+	opacity: 0.80;
+}
+
+#tableBorder
+{
+	border-left: 4px solid red;
+	border-right: 4px solid red;
+	border-bottom: 4px solid red;
+}
+
+.form-group{
+	color: white;
+
+
+}
+
+.label {
+
+
+}
+
+.time
+{
+	border-radius: 5px;
+	font-size: 25px;
+	width: 120px;
+	background-color: #337ab7;
+	text-align: center;
+}
