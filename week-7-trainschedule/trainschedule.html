@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Train Schedule</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+
+		<div class="jumbotron">
+			<h1>Central Station</h1>
+			<h4> Train Schedules </h4>
+
+		</div>
+		<div id="tableBorder">
+			<div id="tableHeader">
+				<p>Current Train Schedule</p>
+			</div>
+			<table id="table" class="table">
+				<thead>
+					<tr>
+						<th>Train Name</th>
+						<th>Destination</th>
+						<th>Frequency</th>
+						<th>Next Arrival</th>
+						<th>Minutes Away</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Chicago Rail</td>
+						<td>Chicago</td>
+						<td>90</td>
+						<td>3:30</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>Memphis Transit</td>
+						<td>Memphis</td>
+						<td>60</td>
+						<td>12:30</td>
+						<td>60</td>
+					</tr>
+					<tr>
+						<td>New York Express</td>
+						<td>New York</td>
+						<td>15</td>
+						<td>2:00</td>
+						<td>5</td>
+					</tr>
+					<tr>
+						<td>Orlando RailBus</td>
+						<td>Orlando</td>
+						<td>300</td>
+						<td>7:00</td>
+						<td>900</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="secondarytableHeader">
+			<p>Add Train</p>
+		</div>
+
+		<form>
+			<div class="row">
+				<div class="col-xs-6 col-xs-offset-3">
+					<form id="newEmployeeForm">
+						<div class="form-group">
+							<label>Train Name</label>
+							<input type="text" id="trainName" class="form-control" placeholder="Please enter a train name...">
+						</div>
+						<div class="form-group">
+							<label>Destination</label>
+							<input type="text" id="destination" class="form-control" placeholder="Please enter your destination..">
+						</div>
+						<div class="form-group">
+							<label>First Train Time (HH:MM - Military Time)</label>
+							<input type="text" id="firstTrain" class="form-control" placeholder="Please enter a Start Time (ex. 01:00)">
+						</div>
+						<div class="form-group">
+							<label>Frequency (Minutes)</label>
+							<input type="text" id="frequency" class="form-control" placeholder="Please enter a frequency (in minutes)">
+						</div>
+
+
+						<div class="form-group text-center">
+							<button class="btn btn-primary" id="submit">
+							Submit
+						</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</form>
+
+
+
+
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+
+
+	<script type="text/javascript" src="train.js"></script>
+
+</body>
+
+</html>
